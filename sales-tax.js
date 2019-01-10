@@ -4,7 +4,8 @@ function calculateSalesTax(salesData, i) {
     provincialTax(salesData, i);
     nationalSales(salesData, i);
   }
-  console.log(nationalData);
+  return(nationalData);
+  //console.log(nationalData);
 }
 
 function provincialSales(salesData, i) {
@@ -64,4 +65,5 @@ var companySalesData = [
   }
 ];
 
-calculateSalesTax(companySalesData);
+var results = calculateSalesTax(companySalesData);
+console.log(results);
